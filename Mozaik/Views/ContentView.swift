@@ -12,7 +12,6 @@ enum Section: String, CaseIterable, Identifiable {
     case extract = "Extract"
     case compress = "Compress"
     case merge = "Merge"
-    case info = "Media Info"
 
     var id: Self { self }
 
@@ -22,7 +21,6 @@ enum Section: String, CaseIterable, Identifiable {
         case .extract: return "square.and.arrow.up"
         case .compress: return "books.vertical"
         case .merge: return "rectangle.3.offgrid"
-        case .info: return "info.circle"
         }
     }
 }
@@ -30,7 +28,7 @@ enum Section: String, CaseIterable, Identifiable {
 import SwiftUI
 
 struct ContentView: View {
-    @State private var selectedSection: Section? = .analyze
+    @State private var selectedSection: Section? = .extract
 
     var body: some View {
         NavigationSplitView {
@@ -48,13 +46,11 @@ struct ContentView: View {
                 case .analyze:
                     AnalyzeView()
                 case .extract:
-                    Text("Extract View")
+                    ExtractView()
                 case .compress:
                     Text("Compress View")
                 case .merge:
                     Text("Merge View")
-                case .info:
-                    Text("Media Info View")
                 case .none:
                     Text("Select a section")
                 }
