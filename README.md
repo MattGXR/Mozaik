@@ -2,7 +2,7 @@
 
 ![Platform](https://img.shields.io/badge/platform-macOS%20Apple%20Silicon-lightgrey?logo=apple)
 ![SwiftUI](https://img.shields.io/badge/UI-SwiftUI-orange?logo=swift)
-![License](https://img.shields.io/github/license/MattGXR/mozaik)
+![License](https://img.shields.io/github/license/mattmeligeni/mozaik)
 
 **Mozaik** is a modern, native macOS application (optimized for Apple Silicon) that allows you to **analyze**, **extract**, **compress**, and **merge** video files like `.mkv` and `.mp4` with a clean SwiftUI interface and high-performance engine.
 
